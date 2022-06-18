@@ -1,0 +1,102 @@
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Empresa X</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="listado_productos.html">Listado de producto</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2>Alta de producto</h2>
+      <form action="https://formspree.io/f/mvolbkql" method="post">
+        <fieldset>
+          <label for="nombre">Nombre</label>
+          <input id="nombre" name="nombre" type="text" />
+
+          <label for="precio">Precio</label>
+          <input id="precio" name="precio" type="number" />
+        </fieldset>
+
+        <fieldset>
+          <label for="stock">Stock</label>
+          <input id="stock" name="stock" type="number" />
+
+          <label for="stock-minimo">Stock minimo</label>
+          <input id="stock-minimo" name="stock-minimo" type="number" />
+        </fieldset>
+
+        <fieldset>
+          <label for="fecha">Fecha de alta</label>
+          <input
+            id="fecha"
+            type="date"
+            name="fecha-de-alta"
+            value="2021-08-21"
+          />
+
+          <label for="hora">Hora de alta</label>
+          <input id="hora" type="time" name="hora-de-alta" value="15:58" />
+        </fieldset>
+
+        <fieldset>
+          <img src="images/mouse.webp" alt="mouse" width="100" />
+
+          <label for="imagen">Imagen</label>
+          <input id="imagen" type="file" name="imagen" accept=".jpg, .png" />
+        </fieldset>
+
+        <fieldset>
+          <label for="cuotas">Cuotas sin interes</label>
+          <select id="cuotas">
+            <option name="cuotas" value="1">1</option>
+            <option name="cuotas" value="3">3</option>
+            <option name="cuotas" value="6" selected>6</option>
+            <option name="cuotas" value="9">9</option>
+            <option name="cuotas" value="12">12</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <label for="nacional">Nacional</label>
+          <input id="nacional" name="destino" type="radio" />
+
+          <label for="importado">Importado</label>
+          <input id="importado" name="destino" type="radio" checked />
+        </fieldset>
+
+        <fieldset>
+          <label for="envio-gratis">Envio gratis</label>
+          <input
+            id="envio-gratis"
+            name="envio-gratis"
+            type="checkbox"
+            checked
+          />
+
+          <label for="garantia">Garantia</label>
+          <input id="garantia" name="garantia" type="checkbox" />
+        </fieldset>
+
+        <fieldset>
+          <textarea
+            name="observaciones"
+            cols="80"
+            rows="6"
+            placeholder="Observaciones"
+          ></textarea>
+        </fieldset>
+
+        <fieldset id="envio">
+          <input id="guardar" type="submit" value="Guardar" />
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>
